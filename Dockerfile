@@ -9,3 +9,5 @@ RUN apt-get update \
 
 ENTRYPOINT ["/usr/local/bin/kubectl"]
 CMD [""]
+
+EXPOSE 8080

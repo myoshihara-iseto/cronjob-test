@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+CMD ["tail -f /dev/null"]
+
 RUN apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/* \
@@ -8,4 +10,4 @@ RUN apt-get update \
   && chmod +x /usr/local/bin/kubectl
 
 ENTRYPOINT ["/usr/local/bin/kubectl"]
-CMD ["tail -f /dev/null"]
+CMD [""]

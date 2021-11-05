@@ -8,6 +8,4 @@ RUN apt-get update \
   && chmod +x /usr/local/bin/kubectl
 
 ENTRYPOINT ["/usr/local/bin/kubectl"]
-CMD [""]
-
-EXPOSE 8080
+CMD ["tail -f /dev/null"]

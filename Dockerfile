@@ -4,5 +4,3 @@ RUN apt-get update && \
     apt-get -y install git libz-dev libtidy-dev
 
 EXPOSE 8080
-
-CMD ["tail -f /dev/null"]
